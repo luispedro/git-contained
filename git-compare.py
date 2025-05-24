@@ -32,7 +32,7 @@ class GitContents:
         if self.is_equals_to(other): return f'{self.git_dir} is the same as {other.git_dir}'
         if self.is_contained_in(other): return f'{self.git_dir} is contained in {other.git_dir}'
         if other.is_contained_in(self): return f'{other.git_dir} is contained in {self.git_dir}'
-        return '{self.git_dir} and {other.git_dir} are different'
+        return f'{self.git_dir} and {other.git_dir} are different'
 
 
 def main(args):
